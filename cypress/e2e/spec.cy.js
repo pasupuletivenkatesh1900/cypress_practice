@@ -1,5 +1,9 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
-  })
-})
+describe("template spec", function () {
+  it("passes", function () {
+    cy.Login();
+  });
+
+  it("fail", function () {
+    cy.Login();
+  });
+});

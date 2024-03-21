@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const login = require("../support/Helper-commands/login-commands");
+
+Cypress.Commands.add("Login", login);
